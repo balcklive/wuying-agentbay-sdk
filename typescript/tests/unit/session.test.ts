@@ -1,8 +1,8 @@
-import { expect } from "chai";
 import * as sinon from "sinon";
+import { expect } from "chai";
+import { Session } from "../../src/session";
 import { AgentBay } from "../../src/agent-bay";
 import { Client } from "../../src/api/client";
-import { Session } from "../../src/session";
 
 describe("TestSession", () => {
   let mockAgentBay: sinon.SinonStubbedInstance<AgentBay>;
@@ -206,9 +206,9 @@ describe("TestSession", () => {
       // Call delete with syncContext=true
       const result = await mockSession.delete(true);
 
-      // Verify sync was called (info is called internally by sync, not directly by delete)
+      // Verify sync was called
       expect((mockSession.context.sync as sinon.SinonStub).calledOnce).to.be.true;
-      // Note: context.info is called internally by context.sync, not directly by session.delete
+      expect((mockSession.context.info as sinon.SinonStub).calledOnce).to.be.true;
 
       // Verify result
       expect(result.success).to.equal(true);
