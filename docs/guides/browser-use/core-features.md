@@ -17,6 +17,7 @@
 - [StealthMode](core-features/stealth-mode.md) - Using stealth-mode to make the browser harder to detect by the anti-bot system
 
 ### IPProxy
+- [Browser Proxy](core-features/browser-proxies.md) - Configure proxy servers to route browser traffic for IP rotation and geographical distribution
 
 ### Captcha Resolving
 

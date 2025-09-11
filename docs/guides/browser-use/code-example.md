@@ -28,6 +28,9 @@
 - [Stealth with fingerprint (TypeScript)](../../../typescript/docs/examples/browser/browser-stealth.ts) - A typescript example showing how to use browser stealth mode with fingerprint to avoid detection by anti-bot services
 
 ### IPProxy
+- [Browser Proxy (Python)](../../../python/docs/examples/browser/browser-proxies.py) - A python example showing how to configure custom and Wuying proxy servers for IP rotation
+
+- [Browser Proxy (TypeScript)](../../../typescript/docs/examples/browser/browser-proxies.ts) - A typescript example showing how to configure custom and Wuying proxy servers for IP rotation
 
 ### Captcha Resolving
 
