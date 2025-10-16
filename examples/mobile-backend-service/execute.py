@@ -283,7 +283,7 @@ def main():
             print("PHASE 2: Uninstall all apps")
             print("="*60)
             start = time.time()
-            uninstall_results = manager.uninstall_apps(apps_to_uninstall)
+            # uninstall_results = manager.uninstall_apps(apps_to_uninstall)
             end = time.time()
             print(f"Time taken: {end - start} seconds")
 
@@ -306,7 +306,7 @@ def main():
 
         # Simulate long-running process
         print("\n⏳ Running for 60 seconds... (Press Ctrl+C to stop)")
-        time.sleep(60)
+        time.sleep(60 * 60 * 24)
 
         print("\n✅ Process completed normally")
 
