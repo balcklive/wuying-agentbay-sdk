@@ -73,12 +73,9 @@ if result.success:
 # Verified: ✓ Session created successfully
 
 # List sessions by labels with pagination
-from agentbay.session_params import ListSessionParams
-params = ListSessionParams(labels={"environment": "production"}, max_results=10)
-result = agent_bay.list_by_labels(params)
+result = agent_bay.list(labels={"environment": "production"}, limit=10)
 if result.success:
-    sessions = result.sessions
-    next_token = result.next_token
+    session_ids = result.session_ids
 # Verified: ✓ Sessions listed successfully with pagination support
 
 # Delete session

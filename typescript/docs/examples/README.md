@@ -38,9 +38,9 @@ Examples available across all environment types.
 - Cross-session data sharing
 
 **[data-persistence/](./data-persistence)**
-- Storing data across sessions
-- Data retrieval patterns
+- **data-persistence.ts**: Basic data persistence and cross-session storage
 - **context-sync-demo.ts**: Context synchronization demonstration
+- **recycle-policy-example.ts**: Data lifecycle management with RecyclePolicy
 
 ### Advanced Features
 
