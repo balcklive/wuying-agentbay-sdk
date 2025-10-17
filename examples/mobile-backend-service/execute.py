@@ -256,11 +256,13 @@ def main():
         # Create session
         manager.create_session()
 
+        manager.execute_command("setprop persist.location.data 54.18952910,23.45436402,gcj")
+
         # Get session info
         manager.get_session_info()
 
         # Execute test command
-        manager.execute_command("echo 'Hello AgentBay'")
+        
 
         # Get installed apps BEFORE uninstallation
         print("\n" + "="*60)
