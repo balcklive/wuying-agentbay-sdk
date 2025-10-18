@@ -256,7 +256,7 @@ def main():
         # Create session
         manager.create_session()
 
-        manager.execute_command("setprop persist.location.data 54.18952910,23.45436402,gcj")
+        manager.execute_command("setprop persist.location.data 23.45436402,54.18952910,gcj")
 
         # Get session info
         manager.get_session_info()
