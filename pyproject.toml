@@ -8,6 +8,3 @@ dependencies = [
     "wuying-agentbay-sdk>=0.9.0",
 ]
 
-[[tool.uv.index]]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-default = true
